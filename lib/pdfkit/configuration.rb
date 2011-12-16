@@ -17,7 +17,8 @@ class PDFKit
     end
 
     def wkhtmltopdf
-      @wkhtmltopdf ||= `which wkhtmltopdf`.chomp
+      # @wkhtmltopdf ||= `which wkhtmltopdf`.chomp
+      @wkhtmltopdf ||= '/usr/local/bin/wkhtmltopdf'
     end
   end
 
